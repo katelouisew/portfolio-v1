@@ -17,3 +17,5 @@ $(function() {
         event.preventDefault();
     });
 });
+
+$('body').scrollspy({ target: '#navbar-fixed-top' });
