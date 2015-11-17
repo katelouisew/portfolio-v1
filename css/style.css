@@ -1,16 +1,17 @@
 /** General Styles **/
-html, body {
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin-bottom: 50px;
+	height: 100%;
 	color: #fdfdfd;	
 	font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	position: relative;
 }
 
 p {
@@ -30,6 +31,11 @@ a:hover {
 
 
 /** Page Layout **/
+section {
+  height: 100%;
+  min-height: 100vh;
+}
+
 .home_section {
 	margin: 0;
 	padding: 250px 50px 50px 50px;
@@ -46,17 +52,19 @@ a:hover {
 
 .work_section {
 	margin: 0;
-	padding: 0;
+	padding: 125px 0 200px 0;
+	height: 100vh;
 }
 
 .component_lib {
 	margin: 0;
-	padding: 0;
+	padding: 125px 0 200px 0;
+	height: 100vh;
 }
 
 .contact_section {
 	margin: 0;
-	padding: 0;
+	padding: 125px 0 200px 0;
 	height: 100vh;
 }
 
@@ -64,15 +72,36 @@ a:hover {
 	padding: 0 0 50px 100px;
 }
 
+.sidebar_left {
+	position: relative;
+	left: -175px;
+	height: 50px;
+	font-size: 13px;
+	color: #555555;
+	-ms-transform: rotate(270deg); 
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.sidebar_right {
+	position: relative;
+	right: -600px;
+	height: 50px;
+	font-size: 13px;
+	color: #555555;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+}
+
 .footer {
-	position: absolute; 
+	position: fixed; 
 	bottom: 0;
-	right: 0;
-	left: 0;
 	height: 50px;
 	width: 100%;
 	z-index: 15;
 	overflow: hidden;
+	background-color: transparent;
 }
 
 
@@ -136,9 +165,9 @@ a.navbar-brand:focus {
 		border-color: #fdfdfd;
 }
 
-.navbar-default .navbar-nav> .active> a, 
-	.navbar-default .navbar-nav >.active> a:focus, 
-		.navbar-default .navbar-nav >.active> a:hover {
+.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:focus, 
+		.navbar-default .navbar-nav > .active > a:hover {
 			background-color: transparent !important;
 			color: #ffa669 !important;
 }
@@ -167,8 +196,14 @@ h1 {
 
 h2 {
 	color: #555555;
-	letter-spacing: 1px;
 	font-size: 32px;
+	letter-spacing: 1px;
+}
+
+h4 {
+	color: #555555;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 .cover_text {
@@ -178,7 +213,7 @@ h2 {
 	line-height: 40px;
 }
 
-.about_text {
+.body_text {
 	text-align: left;
 	font-size: 18px;
 	font-weight: 400;
