@@ -18,4 +18,5 @@ $(function() {
     });
 });
 
-$('body').scrollspy({ target: '#navbar-fixed-top' });
+// figure out why dis wasn't working
+// $('body').scrollspy({ target: '#navbar-fixed-top' });

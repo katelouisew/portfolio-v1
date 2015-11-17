@@ -1,13 +1,16 @@
 /** General Styles **/
 html, body {
-	margin: 0;
-	padding: 0;
-	position: relative;
 	color: #fdfdfd;	
 	font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 p {
@@ -61,21 +64,28 @@ a:hover {
 	padding: 0 0 50px 100px;
 }
 
+.footer {
+	position: absolute; 
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	z-index: 15;
+	overflow: hidden;
+}
+
 
 /** Navigation **/
 .navbar {
-	margin: 0 auto;
-	padding: 40px 0 40px 0;
 	background-color: #bcdcc4;
 	color: #fdfdfd;	
 	border: none; 
 }
 
-.navigation {
-	margin: 0;
-	padding: 5px 0 0 100px;
-	width: 50%;
+#navbar {
 	float: right;
+	padding-top: 15px;
 }
 
 .navbar-nav li a {
@@ -99,15 +109,50 @@ a:hover {
 	color: #ffa669 !important;	
 }
 
+a.navbar-brand {
+	color: #fdfdfd !important;
+}
+
+a.navbar-brand:focus {
+	text-decoration: none;
+}
+
+.navbar-default .navbar-toggle {
+	border: none !important;
+}
+
+.navbar-default .navbar-header .navbar-toggle .glyphicon {
+  background-color: transparent !important;
+  color: #fdfdfd !important;
+}
+
+.navbar-default .navbar-toggle:focus, 
+	.navbar-default .navbar-toggle:hover {
+		background-color: transparent !important;
+}
+
+.navbar-default .navbar-collapse, 
+	.navbar-default .navbar-form {
+		border-color: #fdfdfd;
+}
+
+.navbar-default .navbar-nav> .active> a, 
+	.navbar-default .navbar-nav >.active> a:focus, 
+		.navbar-default .navbar-nav >.active> a:hover {
+			background-color: transparent !important;
+			color: #ffa669 !important;
+}
+
 @media(min-width:767px) {
     .navbar {
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    	padding-top: 20px;
+	    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	    transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
-        padding: 10px 0 10px 0;
+      padding: 5px 0 5px 0;
     }
 }
 
@@ -126,13 +171,6 @@ h2 {
 	font-size: 32px;
 }
 
-.name {
-	margin: 0;
-	padding: 5px 0 0 15px;
-	float: left;
-	width: 50%;
-}
-
 .cover_text {
 	width: 615px;
 	font-size: 32px;
@@ -142,9 +180,9 @@ h2 {
 
 .about_text {
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
-	line-height: 28px;
+	line-height: 24px;
 	color: #555555;	
 }
 
@@ -154,7 +192,7 @@ h2 {
 
 .page_scroll a {
 	border: none;
-	background-color: #bcdcc4;
+	background-color: none !important;
 	color: #ffa669;	
 }
 
