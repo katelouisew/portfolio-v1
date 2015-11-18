@@ -36,7 +36,7 @@
 	
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
 			<div class="container">
 				<div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -44,7 +44,7 @@
 		        <span class="glyphicon glyphicon-menu-hamburger"></span>
 		      </button>				
 
-					<a class="navbar-brand page-scroll" href="#page-top"><h1>kate weir</h1></a>
+					<a href="#page-top" id="name" class="page-scroll">kate weir</a>
 				</div> <!-- /navbar-header -->
 
 				<div id="navbar" class="collapse navbar-collapse">
@@ -57,6 +57,20 @@
 				</div> <!-- /navbar -->
 
 			</div> <!-- /container -->
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<p class="sidebar_left">left side yo</p>
+
+					</div> 
+					<div class="col-md-4">
+
+						<p class="sidebar_right">righty text here</p>
+
+					</div> 
+				</div> <!-- /row -->
+							
 		</nav> 
 
 
@@ -80,18 +94,6 @@
 						Recently graduating from a Bachelor of Multimedia Design, my current focus is to immerse myself in the world of digital design and gain experience writing clean code.</p>
 
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-
-						<p class="sidebar_left">left side yo</p>
-
-					</div> 
-					<div class="col-md-4">
-
-						<p class="sidebar_right">righty text here</p>
-
-					</div> 
 				</div> <!-- /row -->
 			</div> <!-- /container -->
 		</section>
@@ -126,11 +128,13 @@
 					<div class="col-md-6 col-md-offset-3 centered">
 
 						<h4>Feel free to contact me here</h4>
-						<p class="body_text centered">Contact form here ya bish</p>
-					
+						<p class="centered dark">or email me directly at katelouisew@gmail.com
+						<br><br>
+						contact form hurrrrr</p>
+
 					</div>
 				</div> <!-- /row -->
-			</div>
+			</div> <!-- /container -->
 		</section>
 
 		<footer class="footer">
@@ -152,6 +156,18 @@
     <!-- Other JS -->
     <script src="js/main.js"></script>    
     <script src="js/jquery.easing.min.js"></script>
+
+    <!-- <script type="text/javascript">
+
+    	var targetOffset = $("#about").offset().top;
+
+			var $w = $(window).scroll(function() {
+			    if ($w.scrollTop() > targetOffset) {
+			        $('#navigation').css({"background-color":"#"});
+			    } 
+			});
+
+    </script> -->
 
 	</body>
 </html>
