@@ -49,38 +49,25 @@
 
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#about" class="page-scroll">About</a></li>
-						<li><a href="#work" class="page-scroll">Work</a></li>
-						<li><a href="#component_lib" class="page-scroll">Component Library</a></li>
-						<li><a href="#contact" class="page-scroll">Contact</a></li>
+						<li><a href="#about" class="page-scroll light_nav">About</a></li>
+						<li><a href="#work" class="page-scroll light_nav">Work</a></li>
+						<li><a href="#component_lib" class="page-scroll light_nav">Component Library</a></li>
+						<li><a href="#contact" class="page-scroll light_nav">Contact</a></li>
 					</ul>
 				</div> <!-- /navbar -->
 
 			</div> <!-- /container -->
-
-				<div class="row">
-					<div class="col-md-4">
-
-						<p class="sidebar_left">left side yo</p>
-
-					</div> 
-					<div class="col-md-4">
-
-						<p class="sidebar_right">righty text here</p>
-
-					</div> 
-				</div> <!-- /row -->
-							
 		</nav> 
 
 
 		<section id="home" class="home_section"> 
 			<div class="container">
-				<div class="row cover">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
 
-					<p class="cover_text">Hi there! My name's Kate and I'm a<br> 
-					young creative. As a digital designer and front-end developer, I see a <a href="#work" class="page-scroll">project</a> through, from the earliest design iteration into clean functionality. Another sentence about my skills or my portfolio * </p>
+						<p class="cover_text">Hi there! My name's Kate and I'm a young creative. As a digital designer and front-end developer, I see a <a href="#work" class="page-scroll">project</a> through, from the earliest design iteration into clean functionality. Another sentence about my skills or my portfolio * </p>
 
+					</div>
 				</div> <!-- /row -->
 			</div> <!-- /container -->
 		</section> 
@@ -128,9 +115,22 @@
 					<div class="col-md-6 col-md-offset-3 centered">
 
 						<h4>Feel free to contact me here</h4>
-						<p class="centered dark">or email me directly at katelouisew@gmail.com
-						<br><br>
-						contact form hurrrrr</p>
+						<p class="centered dark">or email me directly at katelouisew@gmail.com</p>
+				
+					</div>	
+				</div> <!-- /row -->
+
+				<br><br>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 centered">
+
+						<form class="form-horizontal">
+							<input type="text" class="form-control" id="inputName" placeholder="Name *"> 
+							<input type="email" class="form-control" id="inputEmail1" placeholder="Email *"> 
+							<input type="text" class="form-control" id="inputMessage" placeholder="Message"> <br><br>
+
+						  <button type="submit" class="btn">Send</button>
+						</form>
 
 					</div>
 				</div> <!-- /row -->
@@ -157,17 +157,24 @@
     <script src="js/main.js"></script>    
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
+			var targetOffset = $("#about").offset().top;
 
-    	var targetOffset = $("#about").offset().top;
+			var $w = $(window).scroll(function(){
+			    if ($w.scrollTop() >= targetOffset) { 
+			    	$("#navigation").css({"background-color":"#ffffff"});
+			    	$(".navbar-nav li a").removeClass("light_nav");			     
+			    	$(".navbar-nav li a").addClass("dark_nav");
+			    	$("#name").css({"color":"#555555"});
+			    } else if ($w.scrollTop() < targetOffset) {
+			    	$("#navigation").css({"background-color":"#bcdcc4"});
+			    	$(".navbar-nav li a").removeClass("dark_nav");
+			    	$(".navbar-nav li a").addClass("light_nav");
+			    	$("#name").css({"color":"#fdfdfd"});
+			    }
+			});    	
+    </script>
 
-			var $w = $(window).scroll(function() {
-			    if ($w.scrollTop() > targetOffset) {
-			        $('#navigation').css({"background-color":"#"});
-			    } 
-			});
-
-    </script> -->
 
 	</body>
 </html>
