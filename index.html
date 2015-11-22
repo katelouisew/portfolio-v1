@@ -41,7 +41,7 @@
 				<div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		        <span class="sr-only">Toggle navigation</span>
-		        <span class="glyphicon glyphicon-menu-hamburger"></span>
+		        <span class="glyphicon glyphicon-menu-hamburger" id="hamburger"></span>
 		      </button>				
 
 					<a href="#page-top" id="name" class="page-scroll">kate weir</a>
@@ -73,7 +73,7 @@
 		</section> 
 
 		<section id="about" class="about_section">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 
@@ -177,10 +177,10 @@
 			    	$(".navbar-nav li a").addClass("dark_nav");
 			    	$("#name").css({"color":"#555555"});
 			    } else if ($w.scrollTop() < targetOffset) {
-			    	$("#navigation").css({"background-color":"#bcdcc4"});
+			    	$("#navigation").css({"background-color":"#cef1ce"});
 			    	$(".navbar-nav li a").removeClass("dark_nav");
 			    	$(".navbar-nav li a").addClass("light_nav");
-			    	$("#name").css({"color":"#fdfdfd"});
+			    	$("#name").css({"color":"#ffffff"});
 			    }
 			});    	
     </script>

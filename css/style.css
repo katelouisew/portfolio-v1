@@ -7,7 +7,7 @@ html {
 body {
 	margin-bottom: 50px;
 	height: 100%;
-	color: #fdfdfd;	
+	color: #ffffff;	
 	font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
@@ -26,7 +26,7 @@ a, a:focus {
 }
 
 a:hover {
-	color: #fdfdfd;
+	color: #ffffff;
 	text-decoration: none;	
 }
 
@@ -37,17 +37,22 @@ section {
   min-height: 100vh;
 }
 
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .home_section {
 	margin: 0;
 	padding: 275px 50px 50px 50px;
 	height: 100vh;
-	background-color: #bcdcc4;	
+	background-color: #cef1ce;	
 }
 
 .about_section {
 	margin: 0;
 	padding: 200px 0 200px 0;
-	background-color: #fdfdfd;	
+	background-color: #ffffff;	
 }
 
 .work_section {
@@ -58,7 +63,7 @@ section {
 .component_lib {
 	margin: 0;
 	padding: 125px 0 200px 0;
-	background-color: #fdfdfd;
+	background-color: #ffffff;
 }
 
 .contact_section {
@@ -80,14 +85,18 @@ section {
 /** Navigation **/
 
 #navigation {
-	background-color: #bcdcc4;
-	color: #fdfdfd;	
+	background-color: #cef1ce;
+	color: #ffffff;	
 	border: none; 
 }
 
 #navbar {
 	float: right;
 	padding-top: 15px;
+}
+
+.navbar navbar-default navbar-fixed-top {
+	background-color: #cef1ce;
 }
 
 .navbar-nav li a {
@@ -98,9 +107,8 @@ section {
 	letter-spacing: 1px;
 	text-decoration: none;
 }
-
-.light_nav {
-	color: #fdfdfd !important;
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
 }
 
 .dark_nav {
@@ -137,7 +145,7 @@ a.navbar-brand:focus {
 
 .navbar-default .navbar-header .navbar-toggle .glyphicon {
   background-color: transparent !important;
-  color: #fdfdfd !important;
+  color: #ffffff !important;
 }
 
 .navbar-default .navbar-toggle:focus, 
@@ -147,7 +155,7 @@ a.navbar-brand:focus {
 
 .navbar-default .navbar-collapse, 
 	.navbar-default .navbar-form {
-		border-color: #fdfdfd;
+		border-color: #ffffff;
 }
 
 .navbar-default .navbar-nav > .active > a, 
@@ -172,6 +180,13 @@ a.navbar-brand:focus {
     }
 }
 
+.navbar-default .navbar_toggle {
+	color: #ffffff;
+}
+
+.dark_menu {
+	color: #555555;
+}
 
 /** Text Styles **/
 h1 {
@@ -222,11 +237,11 @@ h4 {
 }
 
 .page_scroll a:hover {
-	color: #fdfdfd;	
+	color: #ffffff;	
 }
 
 a#name.page-scroll, a:focus#name.page-scroll {
-	color: #fdfdfd;
+	color: #ffffff;
 }
 
 a:hover#name.page-scroll {
@@ -269,7 +284,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-	color: #fdfdfd;
+	color: #ffffff;
 	background-color: #ffa669;
 	border: 2px solid #ffffff;
 }
@@ -301,7 +316,7 @@ button[type="submit"]:hover {
 }
 
 .btn:hover {
-	color: #fdfdfd;
+	color: #ffffff;
 }
 
 .btn:focus,.btn:active:focus,.btn.active:focus,
