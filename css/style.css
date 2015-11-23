@@ -1,12 +1,11 @@
 /** General Styles **/
 html {
-	min-height: 100%;
 	position: relative;
 }
 
 body {
+	min-height: 100%;
 	margin-bottom: 50px;
-	height: 100%;
 	color: #ffffff;	
 	font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
@@ -33,7 +32,8 @@ a:hover {
 
 /** Page Layout **/
 section {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   min-height: 100vh;
 }
 
@@ -45,7 +45,8 @@ section {
 .home_section {
 	margin: 0;
 	padding: 275px 50px 50px 50px;
-	height: 100vh;
+	overflow: hidden;
+	/* background-color: #cef1ce;	*/
 	background-color: #cef1ce;	
 }
 
@@ -69,6 +70,7 @@ section {
 .contact_section {
 	margin: 0;
 	padding-top: 200px;
+	padding-bottom: 25px;
 }
 
 .footer {
