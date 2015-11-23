@@ -152,7 +152,7 @@
 				<div class="row centered">
 
 					<span class="page_scroll">
-						<a href="#about" class="btn page-scroll"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+						<a href="#about" class="btn page-scroll" id="scroll"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 					</span>
 
 				</div> <!-- /row -->
@@ -166,25 +166,6 @@
     <!-- Other JS -->
     <script src="js/main.js"></script>    
     <script src="js/jquery.easing.min.js"></script>
-
-    <script type="text/javascript">
-			var targetOffset = $("#about").offset().top;
-
-			var $w = $(window).scroll(function(){
-			    if ($w.scrollTop() >= targetOffset) { 
-			    	$("#navigation").css({"background-color":"#ffffff"});
-			    	$(".navbar-nav li a").removeClass("light_nav");			     
-			    	$(".navbar-nav li a").addClass("dark_nav");
-			    	$("#name").css({"color":"#555555"});
-			    } else if ($w.scrollTop() < targetOffset) {
-			    	$("#navigation").css({"background-color":"#cef1ce"});
-			    	$(".navbar-nav li a").removeClass("dark_nav");
-			    	$(".navbar-nav li a").addClass("light_nav");
-			    	$("#name").css({"color":"#ffffff"});
-			    }
-			});    	
-    </script>
-
 
 	</body>
 </html>

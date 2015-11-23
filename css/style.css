@@ -233,11 +233,16 @@ h4 {
 .page_scroll a {
 	border: none;
 	background-color: transparent !important;
-	color: #ffa669;	
 }
 
 .page_scroll a:hover {
 	color: #ffffff;	
+}
+
+.scroll_up {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 a#name.page-scroll, a:focus#name.page-scroll {
