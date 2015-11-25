@@ -44,10 +44,9 @@ section {
 
 .home_section {
 	margin: 0;
-	padding: 275px 50px 50px 50px;
+	padding: 250px 50px 50px 50px;
 	overflow: hidden;
-	/* background-color: #cef1ce;	*/
-	background-color: #cef1ce;	
+	background-color: #cef1ce;
 }
 
 .about_section {
@@ -97,10 +96,6 @@ section {
 	padding-top: 15px;
 }
 
-.navbar navbar-default navbar-fixed-top {
-	background-color: #cef1ce;
-}
-
 .navbar-nav li a {
 	padding: 0 15px 0 15px;	
 	font-size: 14px;
@@ -147,7 +142,7 @@ a.navbar-brand:focus {
 
 .navbar-default .navbar-header .navbar-toggle .glyphicon {
   background-color: transparent !important;
-  color: #ffffff !important;
+  color: #ffa669 !important;
 }
 
 .navbar-default .navbar-toggle:focus, 
@@ -167,6 +162,10 @@ a.navbar-brand:focus {
 			color: #ffa669 !important;
 }
 
+.navbar-default .navbar-collapse {
+	padding: 2px;
+}
+
 @media(min-width:767px) {
     .navbar {
     	padding-top: 20px;
@@ -177,13 +176,9 @@ a.navbar-brand:focus {
     }
 
     .top-nav-collapse {
-      padding: 10px 0 10px 0;
+      padding: 5px 0 5px 0;
       color: #555555;
     }
-}
-
-.navbar-default .navbar_toggle {
-	color: #ffffff;
 }
 
 .dark_menu {
@@ -202,6 +197,7 @@ h2 {
 	color: #555555;
 	font-size: 32px;
 	letter-spacing: 1px;
+	line-height: 40px;
 }
 
 h4 {
@@ -222,6 +218,12 @@ h4 {
 	font-weight: 400;
 	line-height: 24px;
 	color: #555555;	
+}
+
+.summary_text {
+	display: none;
+	visibility: hidden;
+	position: relative;
 }
 
 .dark {

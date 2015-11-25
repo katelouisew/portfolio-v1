@@ -45,5 +45,15 @@ $(function() {
     } else if ($scroll.scrollTop() < secondTarget) {
       $("a#scroll.btn.page-scroll").removeClass("scroll_up");
     }
-  })
+  });
 });
+
+/* show and hide summary text for work examples
+$(function (){
+  $(".work_img").click(function() {
+    $(".summary_text").css({"display":"block"});
+    $(".summary_text").css({"visibility":"visible"});
+    $(".summary_text").animate({right: '200px'});
+  });
+});
+*/
