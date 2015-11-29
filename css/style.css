@@ -206,10 +206,18 @@ h4 {
 	font-weight: 400;
 }
 
-.cover_text {
+.hero {
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 40px;
+}
+
+/** Ensure this works **/
+@media only screen and (max-device-width: 480px) {
+	.cover_text {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }
 
 .body_text {
@@ -297,6 +305,7 @@ button[type="submit"]:hover {
 	background-color: #ffa669;
 	border: 2px solid #ffffff;
 }
+
 
 /** Miscellaneous **/
 .space {
