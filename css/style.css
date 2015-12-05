@@ -6,16 +6,16 @@ html {
 body {
 	min-height: 100%;
 	margin-bottom: 50px;
-	color: #ffffff;	
+	color: #555555;	
 	font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 23px;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 p {
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
 }
 
 a, a:focus {
@@ -186,30 +186,23 @@ a.navbar-brand:focus {
 }
 
 /** Text Styles **/
+
 h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 22px;
-	letter-spacing: 3px;
-}
-
-h2 {
-	color: #555555;
 	font-size: 32px;
-	letter-spacing: 1px;
+	font-weight: 400;
 	line-height: 40px;
 }
 
 h4 {
 	color: #555555;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
 .hero {
-	font-size: 32px;
-	font-weight: 400;
-	line-height: 40px;
+	color: #ffffff;
 }
 
 /** Ensure this works **/
@@ -218,14 +211,6 @@ h4 {
 		font-size: 20px;
 		line-height: 28px;
 	}
-}
-
-.body_text {
-	text-align: left;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	color: #555555;	
 }
 
 .summary_text {
