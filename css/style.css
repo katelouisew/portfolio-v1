@@ -44,9 +44,10 @@ section {
 
 .home_section {
 	margin: 0;
-	padding: 250px 50px 50px 50px;
+	padding: 200px 0 50px 0;
 	overflow: hidden;
 	background-color: #cef1ce;
+	text-align: center;
 }
 
 .about_section {
@@ -123,15 +124,6 @@ section {
 	color: #ffa669 !important;	
 }
 
-#name {
-	padding: 15px 15px;
-	height: 50px;
-	float: left;
-	font-size: 22px;
-	line-height: 20px;
-	letter-spacing: 3px;
-}
-
 a.navbar-brand:focus {
 	text-decoration: none;
 }
@@ -203,6 +195,16 @@ h4 {
 
 .hero {
 	color: #ffffff;
+	text-align: left;
+}
+
+#name {
+	padding: 15px 15px;
+	height: 50px;
+	float: left;
+	font-size: 22px;
+	line-height: 20px;
+	letter-spacing: 3px;
 }
 
 /** Ensure this works **/
@@ -211,12 +213,6 @@ h4 {
 		font-size: 20px;
 		line-height: 28px;
 	}
-}
-
-.summary_text {
-	display: none;
-	visibility: hidden;
-	position: relative;
 }
 
 .dark {
@@ -299,10 +295,6 @@ button[type="submit"]:hover {
 
 .centered {
 	text-align: center;
-}
-
-.col-md-4 {
-	text-align: center;	
 }
 
 .btn:active {
